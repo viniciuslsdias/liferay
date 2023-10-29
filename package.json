@@ -38,6 +38,7 @@
   },
   "scripts": {
     "start": "tsc && node src/index.js",
-    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
+    "build": "tsc"
   }
 }

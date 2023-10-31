@@ -4,7 +4,7 @@ image:
   repository: viniciuslsdias/liferay
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "2814a9c"
 
 imagePullSecrets: []
 nameOverride: "liferay"

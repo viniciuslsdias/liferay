@@ -8,7 +8,7 @@ push:
 	echo -e "\n\nSuccessfully pushed: viniciuslsdias/liferay:$(SHORT_COMMIT)\n\n"
 run:
 
-	helm upgrade --install liferay ./kubernetes-resources/main-chart --namespace liferay --set image.tag=$(SHORT_COMMIT) --values=./kubernetes-resources/values-dev.yaml
+	helm upgrade --install liferay ./kubernetes-resources/main-chart --namespace liferay --values=./kubernetes-resources/values-dev.yaml
 
 run/infra:
 	kind create cluster --name liferay-development --config ./kubernetes-resources/cluster-config.yaml
